@@ -4,17 +4,16 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
-    <title>LED Banner</title>
+    <title>LED Banner - information app</title>
     <style>
         * {
             padding: 0;
             margin: 0;
         }
 
-        body,
         html {
             height: 100%;
-            background: radial-gradient(at 96.49283077073736% 42.87202481763821%, hsla(211.03448275862067, 56.862745098039284%, 90%, 1) 0%, hsla(211.03448275862067, 56.862745098039284%, 90%, 0) 100%), radial-gradient(at 21.072147853117418% 8.332825325753301%, hsla(251.99999999999994, 38.46153846153849%, 94.90196078431372%, 1) 0%, hsla(251.99999999999994, 38.46153846153849%, 94.90196078431372%, 0) 100%), radial-gradient(at 78.47940016751653% 87.55551599150111%, hsla(211.03448275862067, 56.862745098039284%, 90%, 1) 0%, hsla(211.03448275862067, 56.862745098039284%, 90%, 0) 100%), radial-gradient(at 66.39976667942473% 94.72660681024504%, hsla(251.99999999999994, 38.46153846153849%, 94.90196078431372%, 1) 0%, hsla(251.99999999999994, 38.46153846153849%, 94.90196078431372%, 0) 100%);
+            background: radial-gradient(at 28.29868040590473% 13.56190949109476%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 25.644958704661526% 2.4125367323457936%, hsla(354.45652173913044, 87.6190476190476%, 58.82352941176471%, 1) 0%, hsla(354.45652173913044, 87.6190476190476%, 58.82352941176471%, 0) 100%), radial-gradient(at 16.190804940035097% 11.778641434024983%, hsla(185.30973451327432, 89.68253968253967%, 50.588235294117645%, 1) 0%, hsla(185.30973451327432, 89.68253968253967%, 50.588235294117645%, 0) 100%), radial-gradient(at 33.28204452683535% 4.6483776466608955%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 24.353152270456047% 22.23107714589665%, hsla(354.45652173913044, 87.6190476190476%, 58.82352941176471%, 1) 0%, hsla(354.45652173913044, 87.6190476190476%, 58.82352941176471%, 0) 100%), radial-gradient(at 66.30118240082422% 76.73034436019255%, hsla(185.30973451327432, 89.68253968253967%, 50.588235294117645%, 1) 0%, hsla(185.30973451327432, 89.68253968253967%, 50.588235294117645%, 0) 100%), radial-gradient(at 51.25137038909875% 64.72206699092675%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 38.11316758687937% 9.617260705003794%, hsla(354.45652173913044, 87.6190476190476%, 58.82352941176471%, 1) 0%, hsla(354.45652173913044, 87.6190476190476%, 58.82352941176471%, 0) 100%), radial-gradient(at 85.94318714067184% 75.29737347082153%, hsla(185.30973451327432, 89.68253968253967%, 50.588235294117645%, 1) 0%, hsla(185.30973451327432, 89.68253968253967%, 50.588235294117645%, 0) 100%);
         }
 
         body {
@@ -23,8 +22,14 @@
         }
 
         .main {
-            padding: 20px;
             margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .inside {
+            padding: 20px;
             width: 700px;
             display: flex;
             flex-direction: column;
@@ -32,11 +37,16 @@
             flex-wrap: wrap;
         }
 
-        .main>div {
+        .inside>div {
             margin: 10px;
         }
 
-        .main>div p {
+        .inside>div img {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .inside>div p {
             text-align: center;
         }
 
@@ -59,30 +69,42 @@
             line-height: 24px;
         }
 
-        .break{
+        .break {
             padding: 5px;
         }
 
-        .icons img {
+        .icons>div img {
             width: 120px;
+        }
+
+        @media screen and (max-width: 350px) {
+            .icons {
+                flex-direction: column;
+            }
+
+            .break {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <div><img src="https://appserviceone.github.io/banner-site.png" alt="LED Banner" title="LED Banner"></div>
-        <div>
-            <p>LED Scroller - LED Banner can turns your phone into a cool electronic bulletin board. It can display
-                banner advertisement, electric sign, marquee sign.</p>
-        </div>
-        <div class="icons">
-            <div><a class="link" href="privacy-policy.html">Privacy Policy</a></div>
-            <div class="break"></div>
-            <div><img src="https://appserviceone.github.io/app-store-logo.png" alt="App Store" title="App Store"></div>
+        <div class="inside">
+            <div><img src="https://appserviceone.github.io/banner-site.png" alt="LED Banner" title="LED Banner"></div>
+            <div>
+                <p>LED Scroller - LED Banner can turns your phone into a cool electronic bulletin board. It can display
+                    banner advertisement, electric sign, marquee sign.</p>
+            </div>
+            <div class="icons">
+                <div><a class="link" href="privacy-policy.html">Privacy Policy</a></div>
+                <div class="break"></div>
+                <div><a target="_blank" href="https://apps.apple.com/app/led-scroller-banner/id6736653554"><img src="https://appserviceone.github.io/app-store-logo.png" alt="App Store" title="App Store"></a>
+                </div>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
