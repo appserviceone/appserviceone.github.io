@@ -51,6 +51,7 @@
         }
 
         .link {
+            white-space: nowrap;
             text-decoration: none;
             color: #fff;
             background: #4300be;
@@ -63,6 +64,9 @@
             align-self: center;
             align-items: center;
             align-content: space-between;
+            flex-wrap: wrap;
+            grid-gap: 20px;
+            column-gap: 0px;
         }
 
         .icons p {
@@ -80,6 +84,7 @@
         @media screen and (max-width: 350px) {
             .icons {
                 flex-direction: column;
+                grid-gap: 7px;
             }
 
             .break {
