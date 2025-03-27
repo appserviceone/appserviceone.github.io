@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Watch Faces - Information App</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            height: 100%;
+            background: #2b2b2b;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            color: #444;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .inside {
+            padding: 20px;
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .inside>div {
+            margin: 10px;
+        }
+
+        .inside>div img {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .inside>div p {
+            text-align: center;
+            color: #fff;
+        }
+
+        .link {
+            white-space: nowrap;
+            text-decoration: none;
+            color: #fff;
+            background: #005cbe;
+            padding: 10px 15px 10px 15px;
+            border-radius: 12px;
+        }
+
+        .icons {
+            display: flex;
+            align-self: center;
+            align-items: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+            grid-gap: 20px;
+            column-gap: 0px;
+        }
+
+        .icons p {
+            line-height: 24px;
+        }
+
+        .break {
+            padding: 5px;
+        }
+
+        .icons>div img {
+            width: 120px;
+        }
+
+        @media screen and (max-width: 350px) {
+            .icons {
+                flex-direction: column;
+                grid-gap: 7px;
+            }
+
+            .break {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inside">
+            <div><img src="https://appserviceone.github.io/ios/watch-faces/banner-site.png" alt="LED Banner" title="LED Banner"></div>
+            <div>
+                <p>LED Scroller - LED Banner can turns your phone into a cool electronic bulletin board. It can display
+                    banner advertisement, electric sign, marquee sign.</p>
+            </div>
+            <div class="icons">
+                <div><a class="link" href="privacy-policy.html">Privacy Policy</a></div>
+                <div class="break"></div>
+                <div><a class="link" href="terms-conditions.html">Terms & Conditions</a></div>
+                <div class="break"></div>
+                <div><a target="_blank" href="https://apps.apple.com/app/led-scroller-banner/id6736653554"><img src="https://appserviceone.github.io/app-store-logo.png" alt="App Store" title="App Store"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
