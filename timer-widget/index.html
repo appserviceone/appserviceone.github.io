@@ -68,6 +68,13 @@
             max-width: 550px;
         }
 
+        .inside>div h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
         .inside>div p {
             font-size: 1.7em;
             text-align: center;
@@ -106,6 +113,16 @@
             width: 120px;
         }
 
+        @media screen and (max-width: 650px) {
+            .inside>div p {
+                font-size: 1.4em;
+            }
+
+            .inside>div h1 {
+                font-size: 1.7em;
+            }
+        }
+
         @media screen and (max-width: 350px) {
             .icons {
                 flex-direction: column;
@@ -125,6 +142,7 @@
             <div><img src="banner-site.png" alt="Flip Clock - Aesthetic Widgets" title="Flip Clock - Aesthetic Widgets">
             </div>
             <div>
+                <h1>Flip Clock - Aesthetic Widgets</h1>
                 <p>Smooth, retro-style flip animation for a classic digital clock experience</p>
             </div>
             <div class="icons">
