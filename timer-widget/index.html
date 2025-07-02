@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
+    <link rel="shortcut icon" href="icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png" />
+    <link rel="manifest" href="icon/site.webmanifest" />
+    <title>Flip Clock - Aesthetic Widgets | Information</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            height: 100%;
+            background-color: #ffb999;
+            background-image:
+                radial-gradient(at 68% 49%, hsla(308, 89%, 73%, 1) 0px, transparent 50%),
+                radial-gradient(at 88% 6%, hsla(80, 97%, 69%, 1) 0px, transparent 50%),
+                radial-gradient(at 15% 64%, hsla(127, 92%, 70%, 1) 0px, transparent 50%),
+                radial-gradient(at 44% 54%, hsla(274, 84%, 64%, 1) 0px, transparent 50%),
+                radial-gradient(at 4% 20%, hsla(277, 67%, 73%, 1) 0px, transparent 50%),
+                radial-gradient(at 26% 16%, hsla(195, 72%, 76%, 1) 0px, transparent 50%),
+                radial-gradient(at 33% 59%, hsla(345, 93%, 79%, 1) 0px, transparent 50%);
+        }
+
+        body {
+            font-family: "Oswald", sans-serif;
+            color: #444;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .inside {
+            padding: 20px;
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            flex-wrap: wrap;
+        }
+
+        .inside>div {
+            margin: 10px;
+        }
+
+        .inside>div img {
+            width: 100%;
+            max-width: 550px;
+        }
+
+        .inside>div p {
+            font-size: 1.7em;
+            text-align: center;
+            color: #111;
+        }
+
+        .link {
+            font-size: 1em;
+            white-space: nowrap;
+            text-decoration: none;
+            color: #fff;
+            background: #005cbe;
+            padding: 10px 15px 10px 15px;
+            border-radius: 12px;
+        }
+
+        .icons {
+            display: flex;
+            align-self: center;
+            align-items: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+            grid-gap: 20px;
+            column-gap: 0px;
+        }
+
+        .icons p {
+            line-height: 24px;
+        }
+
+        .break {
+            padding: 5px;
+        }
+
+        .icons>div img {
+            width: 120px;
+        }
+
+        @media screen and (max-width: 350px) {
+            .icons {
+                flex-direction: column;
+                grid-gap: 7px;
+            }
+
+            .break {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inside">
+            <div><img src="banner-site.png" alt="Flip Clock - Aesthetic Widgets" title="Flip Clock - Aesthetic Widgets">
+            </div>
+            <div>
+                <p>Smooth, retro-style flip animation for a classic digital clock experience</p>
+            </div>
+            <div class="icons">
+                <div><a class="link" href="privacy-policy.html">Privacy Policy</a></div>
+                <div class="break"></div>
+                <div><a class="link" href="terms-conditions.html">Terms & Conditions</a></div>
+                <div class="break"></div>
+                <div><a target="_blank" href="https://apps.apple.com/app/"><img
+                            src="https://appserviceone.github.io/app-store-logo.png" alt="App Store"
+                            title="App Store"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
